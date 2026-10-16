@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Debugging Practice</title>
+</head>
+<body>
+  <h1>JavaScript Debugging</h1>
+  <button onclick="calculateTotal()">Calculate Total</button>
+  <p id="result"></p>
+
+  <script>
+    function add(a, b) {
+      let total = a - b; // Bug: should add
+      return total;
+    }
+
+    function calculateTotal() {
+      let price = 100;
+      let quantity = 5;
+      let result = add(price, quantity);
+
+      document.getElementById("result").textContent =
+        "Total: " + result;
+    }
+  </script>
+</body>
+</html>
